@@ -5,7 +5,7 @@ import Card from './components/Card.vue'
 
 <template>
   <div>
-    
+    <Button></Button>
   </div>
   
 </template>

@@ -1,14 +1,13 @@
 <template>
   <div>
-
   </div>
 </template>
 
-<script>
-  export default {
-    name:,
-    props: 
-  }
+<script setup>
+  // export default {
+  //   name:,
+  //   props: 
+  // }
 </script>
 
 <style lang="scss" scoped>
