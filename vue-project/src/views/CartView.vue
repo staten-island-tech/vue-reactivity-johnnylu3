@@ -9,6 +9,7 @@
         </Cart>
 
         Total price: ${{ calculateTotal() }}
+        <p v-show="card.length === null"></p>
 </template>
 
 <script>
