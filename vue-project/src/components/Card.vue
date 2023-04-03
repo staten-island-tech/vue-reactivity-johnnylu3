@@ -1,7 +1,7 @@
 <template>
       <div class="card">
-        <img :src="image" :alt="name" />
         <h2>{{ name }}</h2>
+        <img :src="image" :alt="name" />
         <p>{{ type }}</p>
         <p>Price: ${{ price }}</p>
         <button @click="addToCart">Add to Cart</button>
@@ -41,6 +41,7 @@ import { store } from '../components/store';
 </script>
 
 <style>
+
 .card {
   height: fit-content;
   display: flex;
@@ -50,6 +51,7 @@ import { store } from '../components/store';
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   margin-bottom: 30px;
+  color: black;
 }
 .card > img {
   width: 100%;

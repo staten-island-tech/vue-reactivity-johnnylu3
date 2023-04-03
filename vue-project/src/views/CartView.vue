@@ -1,14 +1,14 @@
 <template>
-<Cart v-for="drink in store.cart"
+<Cart v-for="(drink, index) in store.cart"
         :key="drink.name"
         :name="drink.name"
         :price="drink.price"
         :image="drink.image"
-        :count="drink.count">
-
+        :count="drink.count"
+        :index="index">
         </Cart>
 
-        Total price: {{ calculateTotalPrice() }}
+        Total price: ${{ calculateTotalPrice() }}
 </template>
 
 <script>
@@ -30,13 +30,16 @@ import { store } from '../components/store';
         totalPrice += store.cart[i].price * store.cart[i].count;
       }
       return totalPrice;
+
     },
 
 
   },
+  
+  
 }
 </script>
 
-<style scoped>
+<style>
 
 </style>
