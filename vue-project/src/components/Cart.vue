@@ -2,8 +2,8 @@
   <div class="Cart">
     <h2>{{ name }}</h2>
     <img :src="image" :alt="name" />
-    <p>{{ price }}</p>
-    <p>Count: {{ count }}</p>
+    <p>${{ price }}</p>
+    <p>Quantity: {{ count }}</p>
     <button @click="removeFromCart">Remove from cart</button>
   </div>
 </template>

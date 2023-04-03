@@ -8,7 +8,7 @@
         :index="index">
         </Cart>
 
-        Total price: ${{ calculateTotalPrice() }}
+        Total price: ${{ calculateTotal() }}
 </template>
 
 <script>
@@ -24,16 +24,11 @@ import { store } from '../components/store';
             store,
         }},
     methods: {
-      calculateTotalPrice() {
-      let totalPrice = 0;
-      for (let i = 0; i < store.cart.length; i++) {
-        totalPrice += store.cart[i].price * store.cart[i].count;
-      }
-      return totalPrice;
-
+      calculateTotal() {
+      let total = 0;
+      store.cart.forEach(([i])=>{ total += store.cart[i].price * store.cart[i].count })
+return total
     },
-
-
   },
   
   
