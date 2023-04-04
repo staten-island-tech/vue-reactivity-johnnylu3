@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="cart-container">
   <Cart v-for="(drink, index) in store.cart"
         :key="drink.name"
         :name="drink.name"
@@ -44,7 +44,7 @@ import { store } from '../components/store';
 </script>
 
 <style>
-.container {
+.cart-container {
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;

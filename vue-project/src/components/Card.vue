@@ -1,10 +1,10 @@
 <template>
       <div class="card">
-        <h2>{{ name }}</h2>
-        <img :src="image" :alt="name" />
-        <h3>{{ type }}</h3>
-        <h3>Price: ${{ price }}</h3>
-        <button @click="addToCart">Add to Cart</button>
+        <h2 class="card-name">{{ name }}</h2>
+        <img class="card-img" :src="image" :alt="name" />
+        <h3 class="card-type">{{ type }}</h3>
+        <h3 class="card-price">Price: ${{ price }}</h3>
+        <button class="card-add" @click="addToCart">Add to Cart</button>
       </div>
 </template>
 

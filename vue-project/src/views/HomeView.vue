@@ -1,5 +1,5 @@
 <template>
-<div class="container"><Card   v-for="drink in drinks"
+<div class="card-container"><Card   v-for="drink in drinks"
         :key="drink.name"
         :name="drink.name"
         :type="drink.type"
@@ -81,9 +81,9 @@ import { store } from '../components/store';
 }
 </script>
 
-<style scoped>
+<style>
 
-.container {
+.card-container {
 
   display: flex;
   flex-direction: row;

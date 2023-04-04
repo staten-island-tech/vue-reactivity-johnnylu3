@@ -1,10 +1,10 @@
 <template>
-  <div class="Cart">
-    <h2 class="head">{{ name }}</h2>
-    <img :src="image" :alt="name" />
-    <h3>Price: ${{ price }}</h3>
-    <h3>Quantity: {{ count }}</h3>
-    <button @click="removeFromCart">Remove from cart</button>
+  <div class="cart">
+    <h2 class="cart-name">{{ name }}</h2>
+    <img class="cart-image" :src="image" :alt="name" />
+    <h3 class="cart-price" > Price: ${{ price }}</h3>
+    <h3 class="cart-quantity" > Quantity: {{ count }}</h3>
+    <button class="cart-remove" @click="removeFromCart">Remove from cart</button>
   </div>
 </template>
 
@@ -37,7 +37,7 @@ export default {
 
 <style>
 
-.Cart {
+.cart {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -53,7 +53,7 @@ export default {
   box-shadow: var(--shadow) 0px 3px 8px;
 }
 
-.Cart > img {
+.cart > img {
   width: 5%;
   height: 25%;
   border-radius: 1rem;
