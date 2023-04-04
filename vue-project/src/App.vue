@@ -6,9 +6,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-
     <div class="wrapper">
-
+      <h1 class="title">Bev</h1>
       <nav>
         <RouterLink to="/">Menu</RouterLink>
         <RouterLink to="/about">Cart</RouterLink>
@@ -20,6 +19,10 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+.title { 
+  text-align: center;
+
+}
 .wrapper {
   text-align: center;
   width: 100vw;
@@ -70,7 +73,6 @@ nav a:first-of-type {
   }
   nav {
     text-align: center;
-    margin-left: -1rem;
     font-size: 1rem;
     padding: 1rem 0;
     margin-top: 1rem;
