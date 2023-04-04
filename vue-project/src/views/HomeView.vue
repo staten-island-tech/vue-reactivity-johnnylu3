@@ -1,10 +1,11 @@
 <template>
-<Card   v-for="drink in drinks"
+<div class="container"><Card   v-for="drink in drinks"
         :key="drink.name"
         :name="drink.name"
         :type="drink.type"
         :price="drink.price"
         :image="drink.img"></Card>
+        </div>
 </template>
 
 <script>
@@ -81,5 +82,15 @@ import { store } from '../components/store';
 </script>
 
 <style scoped>
+
+.container {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90vw;
+  margin: 2rem auto;}
+
 
 </style>
